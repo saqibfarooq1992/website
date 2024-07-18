@@ -39,9 +39,24 @@
 
               <div class="collapse navbar-collapse" id="topnav-menu-content">
                   <ul class="navbar-nav align-items-lg-center mx-auto">
-                      <li class="nav-item">
-                          <a class="nav-link" href="index.html">Home</a>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDocs" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Home<i data-feather="chevron-down" class="d-inline-block icon icon-xxs ms-1 mt-lg-0 mt-1"></i>
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDocs">
+                              <ul class="nav">
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="index.html" aria-labelledby="navbarDocs">Home 1 </a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="index2.html" aria-labelledby="navbarDocs">Home 2</a>
+                                  </li>
+
+
+                              </ul>
+                          </div>
                       </li>
+
                       <li class="nav-item">
                           <a class="nav-link" href="index.html#features">Features</a>
                       </li>

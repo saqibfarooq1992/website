@@ -40,6 +40,11 @@
               <div class="collapse navbar-collapse" id="topnav-menu-content3">
                 
                   <ul class="navbar-nav align-items-lg-center mx-auto">
+<!--                      <li class="nav-item ">-->
+<!--                          <a class="nav-link" href="index.html">Home</a>-->
+
+<!--                      </li>-->
+
                       <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="navbarDocs" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Home<i data-feather="chevron-down" class="d-inline-block icon icon-xxs ms-1 mt-lg-0 mt-1"></i>
@@ -53,9 +58,11 @@
                                       <a class="nav-link" href="index2.html" aria-labelledby="navbarDocs">Home 2</a>
                                   </li>
 
+
                               </ul>
                           </div>
                       </li>
+
 
                       <li class="nav-item">
                           <a class="nav-link" href="#features">Features</a>
@@ -92,16 +99,40 @@
           </nav>
         </header>
 
-        <section class="position-relative hero-11-2 py-1 pt-7 pb-sm-6">
+
+
+
+         <section class="position-relative  hero-11 py-1 pt-4 pb-sm-6 slider" id="slider">
             <div class="container hero-content">
                 <div class="row align-items-center">
                     <div class="col-12 text-center">
-<!--                        <h1 class="hero-title">The best way to <span class="highlight highlight-success d-inline-block">showcase</span> your saas</h1>-->
+                        <h1 class="hero-title hero-title2">The best way to <span
+                                class=" highlight2 highlight-success d-inline-block">showcase</span> your saas</h1>
 
-<!--                        <p class="fs-17 text-muted pt-0">-->
-<!--                            Make your saas application stand out with high-quality landing page designed and developed by-->
-<!--                            professional-->
-<!--                        </p>-->
+                        <p class="fs-17 text-muted pt-0 colorf ">
+                            Software For Mortgage Brokers
+                        </p>
+
+                        <div class="mt-4 mt-sm-5 pt-0 d-flex align-items-center justify-content-center">
+                            <div class="row g-2 text-start">
+                                <div class="col-sm-5">
+                                    <label class="visually-hidden" for="name">Name</label>
+                                    <input type="text" class="form-control mb-2 me-sm-2 shadow-sm" name="name" id="name" placeholder="Your Name">
+                                </div>
+                                <div class="col-sm-5">
+                                    <label class="visually-hidden" for="email">Email</label>
+                                    <input type="email" class="form-control mb-2 me-sm-2 shadow-sm" name="email" id="email" placeholder="Your Email">
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="submit" class="btn btn-primary mb-2 text-nowrap">Sign Up</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-2 justify-content-center flex-wrap ">
+                            <div class="me-4 colorf mt-2"><i data-feather="check-circle" class="icon icon-dual-success icon-xs me-1 "></i>Free 14-day Demo</div>
+                            <div class="me-4 colorf mt-2"><i data-feather="check-circle" class="icon icon-dual-success icon-xs me-1"></i>No credit card needed</div>
+                            <div class="colorf mt-2"><i data-feather="check-circle" class="icon icon-dual-success icon-xs me-1"></i>No Setup</div>
+                        </div>
                     </div>
                     <!-- End col -->
                 </div>
@@ -109,12 +140,110 @@
             </div>
 
 
-        </section>
+
+
+
+
+
+         </section>
+<!--        <script>-->
+<!--            const gradientSources = [-->
+<!--                "linear-gradient(to right, rgba(0, 74, 70, 0), rgba(0, 74, 70, 0))",-->
+<!--                "linear-gradient(to right, rgba(0, 74, 70, 0), rgba(0, 74, 70, 0))",-->
+<!--                "linear-gradient(to right, rgba(0, 74, 70, 0), rgba(0, 74, 70, 0))"-->
+<!--            ];-->
+
+<!--            const imageSources = [-->
+<!--                "assets/images/hero/hero1.jpg",-->
+<!--                "assets/images/hero/hero2.jpg",-->
+<!--                "assets/images/hero/hero1.jpg"-->
+<!--            ];-->
+
+<!--            let currentSlide = 0;-->
+
+<!--            function showSlide(index) {-->
+<!--                const slider = document.getElementById("slider");-->
+<!--                slider.style.backgroundImage = `${gradientSources[index]}, url(${imageSources[index]})`;-->
+<!--            }-->
+
+<!--            function advanceSlide() {-->
+<!--                currentSlide = (currentSlide + 1) % imageSources.length;-->
+<!--                showSlide(currentSlide);-->
+<!--            }-->
+
+<!--            showSlide(currentSlide);-->
+<!--            setInterval(advanceSlide, 5000); // Advance to the next slide every 5 seconds-->
+<!--        </script>-->
+
+
+<!--        <script>-->
+<!--            const imageSources = [-->
+<!--                "assets/images/hero/hero1.webp",-->
+<!--                "assets/images/hero/hero2.webp",-->
+<!--                "assets/images/hero/hero4.webp"-->
+<!--            ];-->
+
+<!--            let currentSlide = 0;-->
+
+<!--            function showSlide(index) {-->
+<!--                const slider = document.getElementById("slider");-->
+<!--                slider.style.backgroundImage = `url(${imageSources[index]})`;-->
+<!--            }-->
+
+<!--            function advanceSlide() {-->
+<!--                currentSlide = (currentSlide + 1) % imageSources.length;-->
+<!--                showSlide(currentSlide);-->
+<!--            }-->
+
+<!--            showSlide(currentSlide);-->
+<!--            setInterval(advanceSlide, 4000); // Advance to the next slide every 5 seconds-->
+<!--        </script>-->
+
+        <script>
+            const imageSources = [
+                "assets/images/hero/hero1.jpg",
+                "assets/images/hero/hero2.jpg",
+                "assets/images/hero/hero4.jpg"
+            ];
+
+            let currentSlide = 0;
+
+            // Function to preload images
+            function preloadImages() {
+                for (let i = 0; i < imageSources.length; i++) {
+                    const img = new Image();
+                    img.src = imageSources[i];
+                }
+            }
+
+            function showSlide(index) {
+                const slider = document.getElementById("slider");
+                slider.style.backgroundImage = `url(${imageSources[index]})`;
+            }
+
+            function advanceSlide() {
+                currentSlide = (currentSlide + 1) % imageSources.length;
+                showSlide(currentSlide);
+            }
+
+            // Preload images before starting the slideshow
+            preloadImages();
+
+            // Initial display of the first slide
+            showSlide(currentSlide);
+
+            // Advance to the next slide every 4 seconds
+            setInterval(advanceSlide, 4000);
+        </script>
+
+
 
     </div>
 
+
+
     <!-- features start -->
-    <section class="position-relative overflow-hidden py-7 pb-lg-7" id="features">
+    <section class="position-relative overflow-hidden py-7 pb-lg-7" id="features" >
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col text-center">

@@ -16238,7 +16238,7 @@ input:focus {
 }
 
 .navbar.topnav-menu {
-  height: 70px
+  height: 100px
 }
 
 .navbar.topnav-menu .navbar-nav>.nav-item>.nav-link {
@@ -19254,15 +19254,54 @@ p {
   position: relative
 }
 
-.hero-11::before {
-  /*background: linear-gradient(#f3f4f7 0, #f4f5f7 100%) no-repeat left center;*/
-  /*position: absolute;*/
-  /*top: 0;*/
-  /*bottom: 40%;*/
-  /*left: 0;*/
-  /*right: 0;*/
-  /*content: ''*/
+/*.hero-11::before {*/
+/*  !*background: linear-gradient(#f3f4f7 0, #f4f5f7 100%) no-repeat left center;*!*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  bottom: 40%;*/
+/*  left: 0;*/
+/*  right: 0;*/
+/*  content: '';*/
+
+/*  !*background-image: url("../images/hero/hero1.jpg");*!*/
+/*}*/
+
+
+
+#slider {
+  /*height: 100vh;*/
+  position:relative;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  height:90vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+  z-index: 1;
 }
+
+
+
+
+/*#slider::before {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  right: 0;*/
+/*  left: 0;*/
+/*  background-size: cover;*/
+/*  background-position: center;*/
+
+
+
+
+/*}*/
+
+
 
 .hero-11 .hero-content {
   position: relative
@@ -19302,6 +19341,7 @@ p {
   left: 0;
   z-index: 10
 }
+
 
 .hero-12 {
   height: 640px
@@ -19981,12 +20021,56 @@ p {
   transition: transform .3s ease-in-out
 }
 
+/*.hero-slider {*/
+/*  position: relative;*/
+
+/*  overflow: hidden;*/
+/*}*/
+
+/*.hero-11 {*/
+
+/*  background-size: cover;*/
+/*  background-position: center;*/
+/*  transition: opacity 1s ease-in-out;*/
+/*  background-image: url("../images/hero/hero1.jpg");*/
+
+/*}*/
 
 
-.hero-11 {
+.hero-11-2 {
   height: 100vh;
   background-image: url("../images/hero/hero.png");
   background-size: cover;
   background-position: center;
-
 }
+
+
+.hero-title2 {
+  color:#ffffff;
+}
+.highlight2 {
+  color:#D8FFE7;
+}
+
+.highlight2.highlight-success::before
+{
+background: #14A9A1!important;
+}
+.colorf {
+  color:#ffffff!important;
+}
+
+/*.navbar.topnav-menu {*/
+/*  height:100px;*/
+/*}*/
+
+/*.carosul-x {*/
+/*  margin-top: -200px;*/
+/*}*/
+
+/*!* Media query for screens with a width of 600px or less *!*/
+/*@media only screen and (max-width: 575px) {*/
+/*  .carosul-x {*/
+/*    margin-top: -100px;*/
+/*  }*/
+/*}*/
